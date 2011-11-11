@@ -1,9 +1,13 @@
 #!/usr/bin/env bash
 
+if ! git diff-index --quiet HEAD --; then
+    echo "Seems like you have uncommitted changes"
+    exit
+fi
+
 ORIGINAL_BRANCH_NAME=$(git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/\1/')
 
 # Stash all saved work if that exists
-git stash -u -a
 git checkout master
 
 # Generate and commit apigen
@@ -19,7 +23,6 @@ git cherry-pick $LAST_COMMIT_HASH
 
 # Go back to previous branch and pop stash
 git checkout $ORIGINAL_BRANCH_BANE
-git stash pop
 
-echo "Update ApiGen in doc/ based on master branch. Also cherry-picked it to gh-pages.\n"
+echo "Update ApiGen in doc/ based on master branch. Also cherry-picked it to gh-pages."
 echo "You should properly push gh-pages"
