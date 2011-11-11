@@ -3,7 +3,7 @@
 ORIGINAL_BRANCH_NAME=$(git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/\1/')
 
 # Stash all saved work if that exists
-git stash --incude-untracked --all save
+git stash -u -a
 git checkout master
 
 # Generate and commit apigen
