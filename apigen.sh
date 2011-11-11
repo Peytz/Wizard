@@ -22,7 +22,7 @@ git checkout gh-pages
 git cherry-pick $LAST_COMMIT_HASH
 
 # Go back to previous branch and pop stash
-git checkout $ORIGINAL_BRANCH_BANE
+git checkout $ORIGINAL_BRANCH_NAME
 
 echo "Update ApiGen in doc/ based on master branch. Also cherry-picked it to gh-pages."
 echo "You should properly push gh-pages"
