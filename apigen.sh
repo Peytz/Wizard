@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/usr/bin/env bash -e
 
 if ! git diff-index --quiet HEAD --; then
     echo "> Seems like you have uncommitted changes"
@@ -10,7 +10,7 @@ ORIGINAL_BRANCH_NAME=$(git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e
 git checkout master
 
 # Generate and commit apigen
-apigen --source src --destination doc
+apigen --php "no" --title "Peytz Wizard" --source src --destination doc
 git commit -m 'Update ApiGen' doc
 
 # Save last commit so we can cherry-pick it later
