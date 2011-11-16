@@ -128,6 +128,9 @@ Sample Symfony2 DIC definition
 
 I you want to use DependencyInjection with Symfony2 this is another way of having a Wizard and its steps associated.
 
+The power of using a DIC is that each `StepInterface` implementation can have optional dependencies. Like building forms
+programmatically instead of having a `FormType`.
+
 ``` xml
 <container>
     <services>
