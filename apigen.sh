@@ -1,13 +1,12 @@
 #!/usr/bin/env bash
 
 if ! git diff-index --quiet HEAD --; then
-    echo "Seems like you have uncommitted changes"
-    exit
+    echo "> Seems like you have uncommitted changes"
+    exit 1
 fi
 
 ORIGINAL_BRANCH_NAME=$(git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/\1/')
 
-# Stash all saved work if that exists
 git checkout master
 
 # Generate and commit apigen
