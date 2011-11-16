@@ -27,9 +27,4 @@ interface StepInterface
      * @return Boolean
      */
     function isVisible(ReportInterface $report);
-
-    /**
-     * @return string
-     */
-    function getTranslationKey();
 }

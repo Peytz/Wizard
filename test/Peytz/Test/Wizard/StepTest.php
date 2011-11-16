@@ -20,12 +20,6 @@ class StepTest extends \PHPUnit_Framework_TestCase
         $this->assertInternalType('null', $noob->process($report));
     }
 
-    public function testGetTranslationKey()
-    {
-        $noob = new NoobStep();
-        $this->assertEquals('noob', $noob->getTranslationKey());
-    }
-
     public function testIsVisible()
     {
         $step = new NoobStep();

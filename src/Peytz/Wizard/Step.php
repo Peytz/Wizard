@@ -32,12 +32,4 @@ abstract class Step implements StepInterface
     {
         return true;
     }
-
-    /**
-     * @return string
-     */
-    public function getTranslationKey()
-    {
-        return $this->getName();
-    }
 }
