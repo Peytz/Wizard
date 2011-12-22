@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
-FILE=$(mktemp)
-OUTPUT="build/peytz-wizard.php"
+FILE=$(mktemp "/tmp/stub.php.XXXXX")
+OUTPUT="build/peytz-wizard.phar"
 SOURCE="src"
 
 STUB="

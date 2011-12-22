@@ -19,6 +19,37 @@ in line with our goals for this component.
 
 See https://github.com/Peytz/Wizard/contributors for a list of contributors
 
+Installing
+----------
+
+There is 3 ways to install this component. You can use Composer, Phar or just include the code directly in your
+application.
+
+### Using phar
+
+Theres is a ready to use phar achive in `build/peytz-wizard.phar` which includes its own small autoloader that automatically
+registers with php when included.
+
+``` php
+<?php
+
+require 'phar://build/peytz-wizard.phar';
+
+var_dump(class_exists('Peytz\Wizard\Wizard'));
+```
+
+### Using Composer
+
+You can also install it via composer by using something like the following require.
+
+``` json
+{
+    "require" : {
+        "peytz/wizard" : "master-dev"
+    }
+}
+```
+
 Running tests
 -------------
 
