@@ -101,7 +101,7 @@ class WizardTest extends \PHPUnit_Framework_TestCase
 
     }
 
-    public function testGetFirstStep()
+    public function testFirst()
     {
         $step1 = $this->getStepMock('step1');
         $step2 = $this->getStepMock('step2');
@@ -109,7 +109,18 @@ class WizardTest extends \PHPUnit_Framework_TestCase
         $this->wizard->set($step1);
         $this->wizard->set($step2);
 
-        $this->assertEquals($step1, $this->wizard->getFirstStep());
+        $this->assertEquals($step1, $this->wizard->first());
+    }
+
+    public function testLast()
+    {
+        $step1 = $this->getStepMock('step1');
+        $step2 = $this->getStepMock('step2');
+
+        $this->wizard->set($step1);
+        $this->wizard->set($step2);
+
+        $this->assertEquals($step2, $this->wizard->last());
     }
 
     public function testGetPreviousStepByStep()
