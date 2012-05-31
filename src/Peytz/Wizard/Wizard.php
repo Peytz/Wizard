@@ -153,23 +153,6 @@ class Wizard implements \IteratorAggregate, \Countable
     }
 
     /**
-     * @return string
-     */
-    public function getTemplatePrefix()
-    {
-        return '';
-    }
-
-    /**
-     * @param  StepInterface $step
-     * @return string
-     */
-    public function getTemplateByStep(StepInterface $step)
-    {
-        return $this->getTemplatePrefix() . '/step:' . $step->getName() . '.html.twig';
-    }
-
-    /**
      * @see IteratorAggregate
      * @return ArrayIterator
      */

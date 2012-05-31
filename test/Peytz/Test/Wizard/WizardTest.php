@@ -142,19 +142,6 @@ class WizardTest extends \PHPUnit_Framework_TestCase
         $this->assertEquals($step3, $this->wizard->getNextStepByStep($step2));
     }
 
-    public function testTemplateByStep()
-    {
-        $step = $this->getStepMock('Step1');
-        $wizard = $this->getMock('Peytz\Wizard\Wizard', array('getTemplatePrefix'), array(), '', false);
-        $wizard
-            ->expects($this->any())
-            ->method('getTemplatePrefix')
-            ->will($this->returnValue('MyPrefix'))
-        ;
-
-        $this->assertEquals('MyPrefix/step:Step1.html.twig', $wizard->getTemplateByStep($step));
-    }
-
     public function testIteratorAggregate()
     {
         $steps = array();
