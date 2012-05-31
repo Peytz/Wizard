@@ -1,19 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-	<meta name="generator" content="ApiGen 2.3.0">
-	<meta name="robots" content="noindex">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="generator" content="ApiGen 2.6.1" />
+	<meta name="robots" content="noindex" />
 
 	<title>File Peytz/Wizard/Wizard.php | Peytz Wizard</title>
 
-	<script type="text/javascript" src="resources/combined.js?1841058525"></script>
-	<script type="text/javascript" src="elementlist.js?2633252128"></script>
-	<script type="text/javascript">
-		var ApiGen = ApiGen || {};
-		ApiGen.options = {"elementDetailsCollapsed":true,"elementsOrder":"natural"};
-	</script>
-	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?1298244258">
+	<script type="text/javascript" src="resources/combined.js?144019575"></script>
+	<script type="text/javascript" src="elementlist.js?3315598536"></script>
+	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?1532301413" />
 
 </head>
 
@@ -22,12 +18,11 @@
 	<div id="menu">
 		<a href="index.html" title="Overview"><span>Overview</span></a>
 
-		<div id="groups">
 
+		<div id="groups">
 			<h3>Namespaces</h3>
 			<ul>
-				<li class="active"><a href="namespace-Peytz.html">Peytz</a>
-						<span></span>
+				<li class="active"><a href="namespace-Peytz.html">Peytz<span></span></a>
 						<ul>
 				<li class="active"><a href="namespace-Peytz.Wizard.html">Wizard</a>
 						</li>
@@ -35,7 +30,8 @@
 			</ul>
 		</div>
 
-		<hr>
+		<hr />
+
 
 		<div id="elements">
 			<h3>Classes</h3>
@@ -62,10 +58,10 @@
 <div id="right">
 <div id="rightInner">
 	<form id="search">
-		<input type="hidden" name="cx" value="">
-		<input type="hidden" name="ie" value="UTF-8">
-		<input type="text" name="q" class="text">
-		<input type="submit" value="Search">
+		<input type="hidden" name="cx" value="" />
+		<input type="hidden" name="ie" value="UTF-8" />
+		<input type="text" name="q" class="text" />
+		<input type="submit" value="Search" />
 	</form>
 
 	<div id="navigation">
@@ -165,7 +161,7 @@
 <a href="#74" id="74" class="l"> 74: </a>        <span class="php-var">$steps</span> = <span class="php-var">$this</span>-&gt;all();
 <a href="#75" id="75" class="l"> 75: </a>
 <a href="#76" id="76" class="l"> 76: </a>        <span class="php-keyword1">foreach</span> (<span class="php-var">$steps</span> <span class="php-keyword1">as</span> <span class="php-var">$step</span>) {
-<a href="#77" id="77" class="l"> 77: </a>            <span class="php-keyword1">if</span> (<span class="php-keyword1">false</span> == <span class="php-var">$step</span>-&gt;isVisible(<span class="php-var">$report</span>)){
+<a href="#77" id="77" class="l"> 77: </a>            <span class="php-keyword1">if</span> (<span class="php-keyword1">false</span> == <span class="php-var">$step</span>-&gt;isVisible(<span class="php-var">$report</span>)) {
 <a href="#78" id="78" class="l"> 78: </a>                <span class="php-keyword1">break</span>;
 <a href="#79" id="79" class="l"> 79: </a>            }
 <a href="#80" id="80" class="l"> 80: </a>
@@ -176,7 +172,7 @@
 <a href="#85" id="85" class="l"> 85: </a>    }
 <a href="#86" id="86" class="l"> 86: </a>
 <a href="#87" id="87" class="l"> 87: </a>    <span class="php-comment">/**
-</span><a href="#88" id="88" class="l"> 88: </a><span class="php-comment">     * @param StepInterface $step
+</span><a href="#88" id="88" class="l"> 88: </a><span class="php-comment">     * @param  StepInterface $step
 </span><a href="#89" id="89" class="l"> 89: </a><span class="php-comment">     * @return StepInterface
 </span><a href="#90" id="90" class="l"> 90: </a><span class="php-comment">     */</span>
 <a href="#91" id="91" class="l"> 91: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> getNextStepByStep(StepInterface <span class="php-var">$step</span>)
@@ -192,7 +188,7 @@
 <a href="#101" id="101" class="l">101: </a>    }
 <a href="#102" id="102" class="l">102: </a>
 <a href="#103" id="103" class="l">103: </a>    <span class="php-comment">/**
-</span><a href="#104" id="104" class="l">104: </a><span class="php-comment">     * @param StepInterface $step
+</span><a href="#104" id="104" class="l">104: </a><span class="php-comment">     * @param  StepInterface $step
 </span><a href="#105" id="105" class="l">105: </a><span class="php-comment">     * @return StepInterface
 </span><a href="#106" id="106" class="l">106: </a><span class="php-comment">     */</span>
 <a href="#107" id="107" class="l">107: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> getPreviousStepByStep(StepInterface <span class="php-var">$step</span>)
@@ -221,65 +217,66 @@
 <a href="#130" id="130" class="l">130: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> set(StepInterface <span class="php-var">$step</span>)
 <a href="#131" id="131" class="l">131: </a>    {
 <a href="#132" id="132" class="l">132: </a>        <span class="php-var">$this</span>-&gt;steps[<span class="php-var">$step</span>-&gt;getName()] = <span class="php-var">$step</span>;
-<a href="#133" id="133" class="l">133: </a>        <span class="php-keyword1">return</span> <span class="php-var">$this</span>;
-<a href="#134" id="134" class="l">134: </a>    }
-<a href="#135" id="135" class="l">135: </a>
-<a href="#136" id="136" class="l">136: </a>    <span class="php-comment">/**
-</span><a href="#137" id="137" class="l">137: </a><span class="php-comment">     * @param string $identifier
-</span><a href="#138" id="138" class="l">138: </a><span class="php-comment">     * @return StepInterface
-</span><a href="#139" id="139" class="l">139: </a><span class="php-comment">     */</span>
-<a href="#140" id="140" class="l">140: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> get(<span class="php-var">$identifier</span>)
-<a href="#141" id="141" class="l">141: </a>    {
-<a href="#142" id="142" class="l">142: </a>        <span class="php-keyword1">return</span> <span class="php-var">$this</span>-&gt;has(<span class="php-var">$identifier</span>) ? <span class="php-var">$this</span>-&gt;steps[<span class="php-var">$identifier</span>] : <span class="php-keyword1">null</span>;
-<a href="#143" id="143" class="l">143: </a>    }
-<a href="#144" id="144" class="l">144: </a>
-<a href="#145" id="145" class="l">145: </a>    <span class="php-comment">/**
-</span><a href="#146" id="146" class="l">146: </a><span class="php-comment">     * @param string $identifier
-</span><a href="#147" id="147" class="l">147: </a><span class="php-comment">     * @return Boolean
-</span><a href="#148" id="148" class="l">148: </a><span class="php-comment">     */</span>
-<a href="#149" id="149" class="l">149: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> has(<span class="php-var">$identifier</span>)
-<a href="#150" id="150" class="l">150: </a>    {
-<a href="#151" id="151" class="l">151: </a>        <span class="php-keyword1">return</span> <span class="php-keyword1">isset</span>(<span class="php-var">$this</span>-&gt;steps[<span class="php-var">$identifier</span>]);
-<a href="#152" id="152" class="l">152: </a>    }
-<a href="#153" id="153" class="l">153: </a>
-<a href="#154" id="154" class="l">154: </a>    <span class="php-comment">/**
-</span><a href="#155" id="155" class="l">155: </a><span class="php-comment">     * @return string
-</span><a href="#156" id="156" class="l">156: </a><span class="php-comment">     */</span>
-<a href="#157" id="157" class="l">157: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> getTemplatePrefix()
-<a href="#158" id="158" class="l">158: </a>    {
-<a href="#159" id="159" class="l">159: </a>        <span class="php-keyword1">return</span> <span class="php-quote">''</span>;
-<a href="#160" id="160" class="l">160: </a>    }
-<a href="#161" id="161" class="l">161: </a>
-<a href="#162" id="162" class="l">162: </a>    <span class="php-comment">/**
-</span><a href="#163" id="163" class="l">163: </a><span class="php-comment">     * @param StepInterface $step
-</span><a href="#164" id="164" class="l">164: </a><span class="php-comment">     * @return string
-</span><a href="#165" id="165" class="l">165: </a><span class="php-comment">     */</span>
-<a href="#166" id="166" class="l">166: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> getTemplateByStep(StepInterface <span class="php-var">$step</span>)
-<a href="#167" id="167" class="l">167: </a>    {
-<a href="#168" id="168" class="l">168: </a>        <span class="php-keyword1">return</span> <span class="php-var">$this</span>-&gt;getTemplatePrefix() . <span class="php-quote">'/step:'</span> . <span class="php-var">$step</span>-&gt;getName() . <span class="php-quote">'.html.twig'</span>;
-<a href="#169" id="169" class="l">169: </a>    }
-<a href="#170" id="170" class="l">170: </a>
-<a href="#171" id="171" class="l">171: </a>    <span class="php-comment">/**
-</span><a href="#172" id="172" class="l">172: </a><span class="php-comment">     * @see IteratorAggregate
-</span><a href="#173" id="173" class="l">173: </a><span class="php-comment">     * @return ArrayIterator
-</span><a href="#174" id="174" class="l">174: </a><span class="php-comment">     */</span>
-<a href="#175" id="175" class="l">175: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> getIterator()
-<a href="#176" id="176" class="l">176: </a>    {
-<a href="#177" id="177" class="l">177: </a>        <span class="php-keyword1">return</span> <span class="php-keyword1">new</span> \ArrayIterator(<span class="php-var">$this</span>-&gt;steps);
-<a href="#178" id="178" class="l">178: </a>    }
-<a href="#179" id="179" class="l">179: </a>
-<a href="#180" id="180" class="l">180: </a>    <span class="php-comment">/**
-</span><a href="#181" id="181" class="l">181: </a><span class="php-comment">     * @return integer
-</span><a href="#182" id="182" class="l">182: </a><span class="php-comment">     */</span>
-<a href="#183" id="183" class="l">183: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> <span class="php-keyword2">count</span>()
-<a href="#184" id="184" class="l">184: </a>    {
-<a href="#185" id="185" class="l">185: </a>        <span class="php-keyword1">return</span> <span class="php-keyword2">count</span>(<span class="php-var">$this</span>-&gt;steps);
-<a href="#186" id="186" class="l">186: </a>    }
-<a href="#187" id="187" class="l">187: </a>}
-<a href="#188" id="188" class="l">188: </a></code></pre>
+<a href="#133" id="133" class="l">133: </a>
+<a href="#134" id="134" class="l">134: </a>        <span class="php-keyword1">return</span> <span class="php-var">$this</span>;
+<a href="#135" id="135" class="l">135: </a>    }
+<a href="#136" id="136" class="l">136: </a>
+<a href="#137" id="137" class="l">137: </a>    <span class="php-comment">/**
+</span><a href="#138" id="138" class="l">138: </a><span class="php-comment">     * @param  string        $identifier
+</span><a href="#139" id="139" class="l">139: </a><span class="php-comment">     * @return StepInterface
+</span><a href="#140" id="140" class="l">140: </a><span class="php-comment">     */</span>
+<a href="#141" id="141" class="l">141: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> get(<span class="php-var">$identifier</span>)
+<a href="#142" id="142" class="l">142: </a>    {
+<a href="#143" id="143" class="l">143: </a>        <span class="php-keyword1">return</span> <span class="php-var">$this</span>-&gt;has(<span class="php-var">$identifier</span>) ? <span class="php-var">$this</span>-&gt;steps[<span class="php-var">$identifier</span>] : <span class="php-keyword1">null</span>;
+<a href="#144" id="144" class="l">144: </a>    }
+<a href="#145" id="145" class="l">145: </a>
+<a href="#146" id="146" class="l">146: </a>    <span class="php-comment">/**
+</span><a href="#147" id="147" class="l">147: </a><span class="php-comment">     * @param  string  $identifier
+</span><a href="#148" id="148" class="l">148: </a><span class="php-comment">     * @return Boolean
+</span><a href="#149" id="149" class="l">149: </a><span class="php-comment">     */</span>
+<a href="#150" id="150" class="l">150: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> has(<span class="php-var">$identifier</span>)
+<a href="#151" id="151" class="l">151: </a>    {
+<a href="#152" id="152" class="l">152: </a>        <span class="php-keyword1">return</span> <span class="php-keyword1">isset</span>(<span class="php-var">$this</span>-&gt;steps[<span class="php-var">$identifier</span>]);
+<a href="#153" id="153" class="l">153: </a>    }
+<a href="#154" id="154" class="l">154: </a>
+<a href="#155" id="155" class="l">155: </a>    <span class="php-comment">/**
+</span><a href="#156" id="156" class="l">156: </a><span class="php-comment">     * @return string
+</span><a href="#157" id="157" class="l">157: </a><span class="php-comment">     */</span>
+<a href="#158" id="158" class="l">158: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> getTemplatePrefix()
+<a href="#159" id="159" class="l">159: </a>    {
+<a href="#160" id="160" class="l">160: </a>        <span class="php-keyword1">return</span> <span class="php-quote">''</span>;
+<a href="#161" id="161" class="l">161: </a>    }
+<a href="#162" id="162" class="l">162: </a>
+<a href="#163" id="163" class="l">163: </a>    <span class="php-comment">/**
+</span><a href="#164" id="164" class="l">164: </a><span class="php-comment">     * @param  StepInterface $step
+</span><a href="#165" id="165" class="l">165: </a><span class="php-comment">     * @return string
+</span><a href="#166" id="166" class="l">166: </a><span class="php-comment">     */</span>
+<a href="#167" id="167" class="l">167: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> getTemplateByStep(StepInterface <span class="php-var">$step</span>)
+<a href="#168" id="168" class="l">168: </a>    {
+<a href="#169" id="169" class="l">169: </a>        <span class="php-keyword1">return</span> <span class="php-var">$this</span>-&gt;getTemplatePrefix() . <span class="php-quote">'/step:'</span> . <span class="php-var">$step</span>-&gt;getName() . <span class="php-quote">'.html.twig'</span>;
+<a href="#170" id="170" class="l">170: </a>    }
+<a href="#171" id="171" class="l">171: </a>
+<a href="#172" id="172" class="l">172: </a>    <span class="php-comment">/**
+</span><a href="#173" id="173" class="l">173: </a><span class="php-comment">     * @see IteratorAggregate
+</span><a href="#174" id="174" class="l">174: </a><span class="php-comment">     * @return ArrayIterator
+</span><a href="#175" id="175" class="l">175: </a><span class="php-comment">     */</span>
+<a href="#176" id="176" class="l">176: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> getIterator()
+<a href="#177" id="177" class="l">177: </a>    {
+<a href="#178" id="178" class="l">178: </a>        <span class="php-keyword1">return</span> <span class="php-keyword1">new</span> \ArrayIterator(<span class="php-var">$this</span>-&gt;steps);
+<a href="#179" id="179" class="l">179: </a>    }
+<a href="#180" id="180" class="l">180: </a>
+<a href="#181" id="181" class="l">181: </a>    <span class="php-comment">/**
+</span><a href="#182" id="182" class="l">182: </a><span class="php-comment">     * @return integer
+</span><a href="#183" id="183" class="l">183: </a><span class="php-comment">     */</span>
+<a href="#184" id="184" class="l">184: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> <span class="php-keyword2">count</span>()
+<a href="#185" id="185" class="l">185: </a>    {
+<a href="#186" id="186" class="l">186: </a>        <span class="php-keyword1">return</span> <span class="php-keyword2">count</span>(<span class="php-var">$this</span>-&gt;steps);
+<a href="#187" id="187" class="l">187: </a>    }
+<a href="#188" id="188" class="l">188: </a>}
+<a href="#189" id="189" class="l">189: </a></code></pre>
 
 	<div id="footer">
-		Peytz Wizard API documentation generated by <a href="http://apigen.org">ApiGen 2.3.0</a>
+		Peytz Wizard API documentation generated by <a href="http://apigen.org">ApiGen 2.6.1</a>
 	</div>
 </div>
 </div>
