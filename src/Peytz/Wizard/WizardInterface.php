@@ -10,44 +10,44 @@ interface WizardInterface
     /**
      * @return ReportInterface
      */
-    function getReport();
+    public function getReport();
 
     /**
      * @return StepInterface[]
      */
-    function all();
+    public function all();
 
     /**
      * @return StepInterface
      */
-    function first();
+    public function first();
 
     /**
      * @param StepInterface $step
      */
-    function set(StepInterface $step);
+    public function set(StepInterface $step);
 
     /**
-     * @param string $identifier
+     * @param  string        $identifier
      * @return StepInterface
      */
-    function get($identifier);
+    public function get($identifier);
 
     /**
-     * @param string $identifier
+     * @param  string  $identifier
      * @return boolean
      */
-    function has($identifier);
+    public function has($identifier);
 
     /**
      * @return StepInterface
      */
-    function last();
+    public function last();
 
     /**
      * @param string $identifier
      */
-    function remove($identifier);
+    public function remove($identifier);
 
     /**
      * Run through all steps after and including `$step` and call `StepInterface::process`.
@@ -56,5 +56,5 @@ interface WizardInterface
      *
      * @param StepInterface $step
      */
-    function process(StepInterface $step);
+    public function process(StepInterface $step);
 }
