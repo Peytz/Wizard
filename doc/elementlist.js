@@ -1,3 +1,3 @@
 
 var ApiGen = ApiGen || {};
-ApiGen.elements = [["class","Peytz\\Wizard\\ReportInterface"],["class","Peytz\\Wizard\\Step"],["class","Peytz\\Wizard\\StepInterface"],["class","Peytz\\Wizard\\Wizard"]];
+ApiGen.elements = [["c","Peytz\\Wizard\\ReportInterface"],["c","Peytz\\Wizard\\Step"],["c","Peytz\\Wizard\\StepInterface"],["c","Peytz\\Wizard\\Wizard"]];
