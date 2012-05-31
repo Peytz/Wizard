@@ -74,7 +74,7 @@ class Wizard implements \IteratorAggregate, \Countable
         $steps = $this->all();
 
         foreach ($steps as $step) {
-            if (false == $step->isVisible($report)){
+            if (false == $step->isVisible($report)) {
                 break;
             }
 
@@ -85,7 +85,7 @@ class Wizard implements \IteratorAggregate, \Countable
     }
 
     /**
-     * @param StepInterface $step
+     * @param  StepInterface $step
      * @return StepInterface
      */
     public function getNextStepByStep(StepInterface $step)
@@ -101,7 +101,7 @@ class Wizard implements \IteratorAggregate, \Countable
     }
 
     /**
-     * @param StepInterface $step
+     * @param  StepInterface $step
      * @return StepInterface
      */
     public function getPreviousStepByStep(StepInterface $step)
@@ -130,11 +130,12 @@ class Wizard implements \IteratorAggregate, \Countable
     public function set(StepInterface $step)
     {
         $this->steps[$step->getName()] = $step;
+
         return $this;
     }
 
     /**
-     * @param string $identifier
+     * @param  string        $identifier
      * @return StepInterface
      */
     public function get($identifier)
@@ -143,7 +144,7 @@ class Wizard implements \IteratorAggregate, \Countable
     }
 
     /**
-     * @param string $identifier
+     * @param  string  $identifier
      * @return Boolean
      */
     public function has($identifier)
@@ -160,7 +161,7 @@ class Wizard implements \IteratorAggregate, \Countable
     }
 
     /**
-     * @param StepInterface $step
+     * @param  StepInterface $step
      * @return string
      */
     public function getTemplateByStep(StepInterface $step)

@@ -11,7 +11,6 @@ EOT
     );
 }
 
-
 $loader = new ClassLoader();
 $loader->add('Acme', __DIR__ . '/Peytz/Test/Wizard/Fixtures');
 $loader->register();

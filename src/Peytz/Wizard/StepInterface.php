@@ -10,21 +10,21 @@ interface StepInterface
     /**
      * @return Symfony\Component\Form\FormTypeInterface
      */
-    function getFormType();
+    public function getFormType();
 
     /**
      * @return string
      */
-    function getName();
+    public function getName();
 
     /**
      * @param ReportInterface $report
      */
-    function process(ReportInterface $report);
+    public function process(ReportInterface $report);
 
     /**
-     * @param ReportInterface $report
+     * @param  ReportInterface $report
      * @return Boolean
      */
-    function isVisible(ReportInterface $report);
+    public function isVisible(ReportInterface $report);
 }

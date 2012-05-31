@@ -98,7 +98,7 @@ class WizardTest extends \PHPUnit_Framework_TestCase
         $this->wizard->set($invisible);
 
         $this->assertEquals($visible, $this->wizard->getLastVisibleStep());
-        
+
     }
 
     public function testGetFirstStep()

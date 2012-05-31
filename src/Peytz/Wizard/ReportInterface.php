@@ -10,5 +10,5 @@ interface ReportInterface
     /**
      * @return Boolean
      */
-    function canCalculateResult();
+    public function canCalculateResult();
 }
