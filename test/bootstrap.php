@@ -1,8 +1,8 @@
 <?php
 
-namespace Composer\Autoload;
+use Composer\Autoload\ClassLoader;
 
-if (!@include __DIR__ . '/../vendor/.composer/autoload.php') {
+if (!@include __DIR__ . '/../vendor/autoload.php') {
     die(<<<'EOT'
 You must set up the project dependencies, run the following commands:
 wget http://getcomposer.org/composer.phar
