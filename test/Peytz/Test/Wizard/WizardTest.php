@@ -13,6 +13,21 @@ class WizardTest extends \PHPUnit_Framework_TestCase
         $this->wizard = new Wizard($this->getReportMock());
     }
 
+    public function testReportCanBeExchanged()
+    {
+        $wizard = new Wizard($original = $this->getReportMock());
+        $this->assertEquals($original, $wizard->getReport());
+
+        $wizard->setReport($exchanged = $this->getReportMock());
+        $this->assertEquals($exchanged, $wizard->getReport());
+    }
+
+    public function testReportCanBeNullWhenCreatingObject()
+    {
+        $wizard = new Wizard();
+        $this->assertInternalType('null', $wizard->getReport());
+    }
+
     public function testFluentInterface()
     {
         $this->assertInstanceOf('Peytz\Wizard\Wizard', $this->wizard->set($this->getStepMock('step1')));

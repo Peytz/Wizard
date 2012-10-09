@@ -20,7 +20,17 @@ class Wizard implements WizardInterface, \IteratorAggregate, \Countable
     /**
      * Generates a token to be used for saving
      */
-    public function __construct(ReportInterface $report)
+    public function __construct(ReportInterface $report = null)
+    {
+        if ($report) {
+            $this->setReport($report);
+        }
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function setReport(ReportInterface $report)
     {
         $this->report = $report;
     }

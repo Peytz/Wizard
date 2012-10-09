@@ -13,6 +13,11 @@ interface WizardInterface
     public function getReport();
 
     /**
+     * @param ReportInterface $report
+     */
+    public function setReport(ReportInterface $report);
+
+    /**
      * @return StepInterface[]
      */
     public function all();
