@@ -81,7 +81,7 @@ class CustomStep extends Step
 {
     public function getFormType()
     {
-        return CustomFormType();
+        return new CustomFormType();
     }
 }
 ```
@@ -100,7 +100,7 @@ class CustomWizard extends Wizard
     public function __construct(ReportInterface $report)
     {
         parent::__construct($report);
-        $this->add(CustomStep());
+        $this->add(new CustomStep());
     }
 }
 ```
